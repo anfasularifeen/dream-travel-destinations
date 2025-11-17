@@ -1,42 +1,109 @@
-#root {
-  max-width: 1280px;
+/* src/App.css */
+:root {
+  --color-primary: #3a86ff; /* A bright, adventurous blue */
+  --color-secondary: #ffbe0b; /* A sunny, exploratory yellow */
+  --color-background: #f4f7f9; /* Light background */
+  --color-text: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.travel-app {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+/* Header Styling */
+.header-section {
   text-align: center;
+  padding: 40px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header-section h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tagline {
+  font-style: italic;
+  opacity: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Section Styling */
+main section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  padding: 2em;
+main h2 {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Destinations Grid */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.destination-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card h3 {
+  color: #d90429; /* A vivid red for emphasis */
+  margin-top: 0;
+}
+
+.reason h4 {
+  color: #4a4e69;
+  margin-bottom: 5px;
+}
+
+/* Goals List */
+.goals-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.goals-list li {
+  background-color: #e5e5e5;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-left: 5px solid var(--color-secondary);
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  color: #6c757d;
 }
