@@ -9,8 +9,8 @@ A React application showcasing my travel bucket list, built with Vite and deploy
 * **Goals:** A list of my personal travel-related goals.
 
 ## 🔗 Links
-- **GitHub Repository:** [Insert your GitHub Repository URL here]
-- **Live Website:** [Insert your Vercel/Netlify Deployment URL here]
+- **GitHub Repository:**  https://github.com/anfasularifeen/dream-travel-destinations.git
+- **Live Website:** https://dream-travel-destination-anfas.netlify.app/
 
 ## 🛠️ Run Locally
 To get a local copy up and running, follow these simple steps.
